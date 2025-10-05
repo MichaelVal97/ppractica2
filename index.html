@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página Básica</title>
+  <style>
+    /* ====== Estilos generales ====== */
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0a0a0a, #202020);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #111;
+      padding: 1rem 0;
+      text-align: center;
+      border-bottom: 2px solid #e60000;
+      box-shadow: 0 0 10px #e60000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      letter-spacing: 2px;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    main h2 {
+      color: #e60000;
+      margin-bottom: 1rem;
+    }
+
+    main p {
+      max-width: 600px;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    button {
+      background: #e60000;
+      color: #fff;
+      border: none;
+      padding: 0.8rem 1.5rem;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background: #ff2020;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ff2020;
+    }
+
+    footer {
+      background: #111;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      border-top: 2px solid #e60000;
+    }
+
+    /* Animación de entrada */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
-    
+  <header>
+    <h1>Mi Página Web Básica</h1>
+  </header>
+
+  <main>
+    <h2>Bienvenido 🚀</h2>
+    <p>Esta es una página de ejemplo creada con HTML y CSS.  
+       Puedes usarla como base para cualquier proyecto simple o práctica de diseño.</p>
+    <button onclick="alert('¡Gracias por visitar!')">Haz clic aquí</button>
+  </main>
+
+  <footer>
+    <p>© 2025 - Diseñada por <strong>Tú 😎</strong></p>
+  </footer>
 </body>
 </html>
